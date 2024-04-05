@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Корзина"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page__cart cart">
+         <div class="cart__container">
+            <div class="cart__title">Корзина</div>
+            <div class="cart__navigation">
+               <a href="home.html" class="cart__navigation__base">Главная</a>
+               <div class="cart__navigation__next">Корзина</div>
+            </div>
+            <div class="cart__main">
+               <div class="cart__main__body">
+                  <div class="cart__main__product">
+                     <div class="cart__main__product__body__title">Товар</div>
+                     <div class="cart__main__product__body">
+                        <a href="" class="cart__main__product__cancel">
+                           <img src="@img/main-block/Close.png" alt="">
+                        </a>
+                        <div class="cart__main__product__img">
+                           <img src="@img/main-block/product__1.png" alt="">
+                        </div>
+                        <div class="cart__main__product__name">Футболка USA</div>
+                     </div>
+                  </div>
+                  <div class="cart__main__price">
+                     <div class="cart__main__price__title">Цена</div>
+                     <div class="cart__main__price__body">$129</div>
+                  </div>
+                  <div class="cart__main__amount">
+                     <div class="cart__main__amount__title">Количество</div>
+                     <div class="cart__main__amount__body">
+                        <input type="text" placeholder="1">
+                     </div>
+                  </div>
+                  <div class="cart__main__all">
+                     <div class="cart__main__all__title">Всего</div>
+                     <div class="cart__main__all__body">$129</div>
+                  </div>
+               </div>
+               <div class="cart__main__buttons">
+                  <div class="cart__main__buttons__cupon">
+                     <input type="text" placeholder="Введите купон">
+                  </div>
+                  <button class="cart__main__buttons__activate">Применить купон</button>
+                  <a href="" class="cart__main__buttons__reloud">Обновить корзину</a>
+               </div>
+               <div class="cart__main__footer">
+                  <div class="cart__main__footer__final-amount">
+                     <p>Подытог:</p>
+                     <p>$129</p>
+                  </div>
+                  <div class="cart__main__footer__final-button">
+                     <p>Итого:</p>
+                     <p>$129</p>
+                  </div>
+                  <a href="making-order.html" class="cart__main__footer__make-order">
+                     Оформить заказ
+                  </a>
+               </div>
+            </div>
+         </div>
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+body::after {
+   content: "";
+   background-color: rgba(0, 0, 0, 0.5);
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   transition: opacity 0.8s ease 0s;
+   pointer-events: none;
+   z-index: 149;
+}
+
+.popup-show body::after {
+   opacity: 1;
+}
+
+.popup {
+   position: fixed;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   padding: 30px 10px;
+   transition: visibility 0.8s ease 0s;
+   visibility: hidden;
+   pointer-events: none;
+}
+
+.popup_show {
+   z-index: 150;
+   visibility: visible;
+   overflow: auto;
+   pointer-events: auto;
+}
+
+.popup_show .popup__content {
+   visibility: visible;
+   transform: scale(1);
+}
+
+.popup__wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   min-height: 100%;
+   flex: 1 1 auto;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: rem(70);
+}
+
+.popup__content {
+   visibility: hidden;
+   transform: scale(0);
+   transition: transform 0.3s ease 0s;
+   background-color: #eee;
+   //padding: 20px;
+   //width: 100%;
+   //max-width: 900px;
+   //border-radius: 20px;
+   display: grid;
+   justify-content: end;
+
+   .lock & {
+      visibility: visible;
+   }
+
+   .popup__close {
+      justify-self: end;
+      margin-right: rem(32);
+      margin-top: rem(32);
+   }
+}
+
+.popup__main {}
+
+.popup__block {
+   @include adaptiveValue("padding-right", 70, 45);
+   @include adaptiveValue("padding-left", 70, 45);
+   @include adaptiveValue("padding-bottom", 70, 45);
+   padding-top: rem(38);
+   display: flex;
+   flex-direction: column;
+   row-gap: rem(35);
+
+   .popup__block__title {
+      font-size: rem(25);
+      font-weight: 700;
+      letter-spacing: 0.5px;
+   }
+
+   .popup__block__input {
+      font-size: rem(17);
+      font-weight: 500;
+      letter-spacing: 0.34px;
+      color: rgba(134, 134, 134, 1);
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(35);
+
+      .popup__block__input__name {
+         height: rem(40);
+         display: flex;
+
+         input {
+            height: rem(40);
+            padding-left: rem(10);
+            flex: 1 1 auto;
+            border-bottom: 1px solid #000;
+         }
+      }
+
+      .popup__block__input__mail {
+         height: rem(40);
+         display: flex;
+
+         input {
+            height: rem(40);
+            padding-left: rem(10);
+            flex: 1 1 auto;
+            border-bottom: 1px solid #000;
+
+         }
+      }
+
+      .popup__block__input__phone {
+         height: rem(40);
+         display: flex;
+
+         input {
+            height: rem(40);
+            padding-left: rem(10);
+            flex: 1 1 auto;
+            border-bottom: 1px solid #000;
+
+         }
+      }
+   }
+
+   .popup__block__button {
+      display: flex;
+      height: rem(68);
+      background-color: rgba(110, 156, 159, 1);
+      align-items: center;
+      justify-content: center;
+      transition: all 0.8s ease 0s;
+
+      a {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex: 1 1 auto;
+         color: rgba(255, 255, 255, 1);
+         height: 100%;
+         weight: 100%;
+      }
+
+      @media (any-hover: hover) {
+         &:hover {
+            background-color: #509498;
+         }
+      }
+   }
+}
+
+.popup__main__thank {
+   .popup__content {}
+
+   .popup__thank {
+      @include adaptiveValue("padding", 70, 35);
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      row-gap: rem(35);
+
+      .popup__thank__title {
+         font-size: rem(25);
+         font-weight: 500;
+         letter-spacing: 0.5px;
+         text-align: center;
+      }
+
+      .popup__thank__button {
+         display: flex;
+         height: rem(68);
+         background-color: rgba(110, 156, 159, 1);
+         align-items: center;
+         justify-content: center;
+         transition: all 0.8s ease 0s;
+
+         a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1 1 auto;
+            color: rgba(255, 255, 255, 1);
+            height: 100%;
+            weight: 100%;
+            padding-left: rem(50);
+            padding-right: rem(50);
+         }
+
+         @media (any-hover: hover) {
+            &:hover {
+               background-color: #509498;
+            }
+         }
+      }
+   }
+}

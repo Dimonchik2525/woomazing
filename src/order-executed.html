@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Заказ получен"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page__received received">
+         <div class="received__container">
+            <div class="received__title">Заказ получен</div>
+            <div class="received__navigation">
+               <a href="home.html" class="received__navigation__base">Главная</a>
+               <a href="making-order.html" class="received__navigation__middle">Оформление заказа</a>
+               <div class="received__navigation__next">Заказ получен</div>
+            </div>
+            <div class="main__received">
+               <div class="main__received__done">
+                  <div class="main__received__done__img">
+                     <img src="@img/icon-done.png" alt="">
+                  </div>
+                  <div class="main__received__done__text">
+                     <p>Заказ успешно оформлен</p>
+                     <p>Мы свяжемся с вами в ближайшее время!</p>
+                  </div>
+               </div>
+               <div class="main__received__home">
+                  <a href="home.html">Перейти на главную</a>
+               </div>
+            </div>
+         </div>
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

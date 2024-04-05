@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Контакты"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page__contacts contacts">
+         <div class="contacts__container">
+            <div class="contacts__title">Контакты</div>
+            <div class="contacts__navigation">
+               <a href="home.html" class="contacts__navigation__base">Главная</a>
+               <div class="contacts__navigation__next">Контакты</div>
+            </div>
+            <div class="contacts__main">
+               <div class="contacts__main__map">
+                  <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47665.87884914631!2d44.813723018212876!3d41.69640063581679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cfd14a9a29b%3A0x9a438625d9da2c32!2z0JrQsNGE0LXQtNGA0LDQu9GM0L3Ri9C54oCLINCh0L7QsdC-0YAg0KHQstGP0YLQvtC5INCi0YDQvtC40YbRiyDQsiDQotCx0LjQu9C40YHQuA!5e0!3m2!1sru!2sge!4v1689954081802!5m2!1sru!2sge"
+                     style="border:0;" allowfullscreen="" loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade"></iframe>
+               </div>
+               <div class="contacts__main__info contacts__info">
+                  <div class="contacts__info__item">
+                     <div class="contacts__info__item__title">Телефон</div>
+                     <div class="contacts__info__item__text">
+                        <a href="tel:+7 (495) 823-54-12">+7 (495) 823-54-12</a>
+                     </div>
+                  </div>
+                  <div class="contacts__info__item">
+                     <div class="contacts__info__item__title">E-mail</div>
+                     <a href="mailto:info@sitename.com" class="contacts__info__item__text">info@sitename.com</a>
+                  </div>
+                  <div class="contacts__info__item">
+                     <div class="contacts__info__item__title">Адрес</div>
+                     <address class="contacts__info__item__text">г. Москва, 3-я улица Строителей, 25</address>
+                  </div>
+               </div>
+               <div class="contacts__main__form contacts__form">
+                  <div class="contacts__form__title">Напишите нам</div>
+                  <div class="contacts__form__input">
+                     <input type="text" placeholder="Имя">
+                     <input type="email" placeholder="E-mail">
+                     <input type="tel" placeholder="Телефон">
+                     <textarea placeholder="Сообщение"></textarea>
+                     <a class="contacts__form__input__button" href="">Отправить</a>
+                  </div>
+                  <div class="contacts__form__button">Сообщение успешно отправлено</div>
+               </div>
+            </div>
+         </div>
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

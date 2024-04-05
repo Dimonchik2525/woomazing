@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+         <div data-watch="navigator" class="main__slider">
+            <div class="main__slider__container">
+               <div class="main__slider__wrapper">
+                  <div class="slider-left swiper">
+                     <div class="slider-left__wrapper swiper-wrapper">
+                        <div class="slider-left__slide swiper-slide">
+                           <div class="slider-left__title">Новые поступления
+                              в этом сезоне</div>
+                           <div class="slider-left__text">Утонченные сочетания и бархатные оттенки - вот то, что вы
+                              искали
+                              в этом сезоне. Время исследовать.</div>
+                           <a href="shop.html" class="slider-left__buttom">
+                              <button class="slider-left__buttom__arrow _icon-arrow"></button>
+                              <button class="slider-left__buttom__open">Открыть магазин</button>
+                           </a>
+                        </div>
+                        <div class="slider-left__slide swiper-slide">
+                           <div class="slider-left__title">Что-то новенькое. Мы заждались тебя.</div>
+                           <div class="slider-left__text">Надоело искать себя в сером городе? Настало время новых идей,
+                              свежих красок и вдохновения с Womazing!</div>
+                           <a href="shop.html" class="slider-left__buttom">
+                              <button class="slider-left__buttom__arrow _icon-arrow"></button>
+                              <button class="slider-left__buttom__open">Открыть магазин</button>
+                           </a>
+                        </div>
+                        <div class="slider-left__slide swiper-slide">
+                           <div class="slider-left__title">Включай новый сезон с WOMAZING</div>
+                           <div class="slider-left__text">Мы обновили ассортимент - легендарные коллекции и новинки от
+                              отечественных дизайнеров</div>
+                           <a href="shop.html" class="slider-left__buttom">
+                              <button class="slider-left__buttom__arrow _icon-arrow"></button>
+                              <button class="slider-left__buttom__open">Открыть магазин</button>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="controll__main__dotts"></div>
+                  </div>
+                  <div class="slider-right swiper">
+                     <div class="slider-right__wrapper swiper-wrapper">
+                        <div class="slider-right__slide swiper-slide">
+                        </div>
+                        <div class="slider-right__slide swiper-slide">
+                        </div>
+                        <div class="slider-right__slide swiper-slide">
+                        </div>
+                     </div>
+                  </div>
+                  <img class="main__slider__1" src="@img/main__slider/main__slider__1.png" alt="">
+                  <img class="main__slider__2" src="@img/main__slider/main__slider__2.png" alt="">
+                  <div class="main__slider__background"></div>
+               </div>
+            </div>
+         </div>
+         <div class="main__block block">
+            <div class="block__container">
+               <div data-watch="navigator" class="block__products products">
+                  <div class="products__title">Новая коллекция</div>
+                  <div class="products__wrapper">
+                     <div class="products__item">
+                        <a href="product.html" class="products__item__img"><img src="@img/main-block/product__1.png"
+                              alt=""></a>
+                        <div class="products__item__bottom">
+                           <a href="product.html" class="products__item__title">Футболка USA</a>
+                           <div class="products__item__text">
+                              <p>$229</p>
+                              <p>$129</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="products__item">
+                        <a href="product.html" class="products__item__img"><img src="@img/main-block/product__2.png"
+                              alt=""></a>
+                        <div class="products__item__bottom">
+                           <a href="product.html" class="products__item__title">Купальник Glow</a>
+                           <div class="products__item__text">$129</div>
+                        </div>
+                     </div>
+                     <div class="products__item">
+                        <a href="product.html" class="products__item__img"><img src="@img/main-block/product__3.png"
+                              alt=""></a>
+                        <div class="products__item__bottom">
+                           <a href="product.html" class="products__item__title">Свитшот Sweet Shot</a>
+                           <div class="products__item__text">$129</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="products__footer"> <a href="shop.html" class="products__button"><span>Открыть
+                           магазин</span></a>
+                  </div>
+               </div>
+               <div data-watch="navigator" class="block__about about">
+                  <div class="about__title">Что для нас важно</div>
+                  <div class="about__items">
+                     <div class="about__item">
+                        <div class="about__item__img">
+                           <img src="@img/main-block/hand.webp" alt="">
+                        </div>
+                        <div class="about__item__title">Качество</div>
+                        <div class="about__item__text">Наши профессионалы работают на лучшем оборудовании для пошива
+                           одежды беспрецедентного качества</div>
+                     </div>
+                     <div class="about__item">
+                        <div class="about__item__img"> <img src="@img/main-block/circle.webp" alt=""></div>
+                        <div class="about__item__title">Скорость</div>
+                        <div class="about__item__text">Благодаря отлаженной системе в Womazing мы можем отшивать до
+                           20-ти единиц продукции в наших собственных цехах</div>
+                     </div>
+                     <div class="about__item">
+                        <div class="about__item__img"> <img src="@img/main-block/circle.webp" alt=""></div>
+                        <div class="about__item__title">Ответственность</div>
+                        <div class="about__item__text">Мы заботимся о людях и планете. Безотходное производство и
+                           комфортные условия труда - все это Womazing</div>
+                     </div>
+                  </div>
+               </div>
+               <div data-watch="navigator" class="block__dream-team dream-team">
+                  <div class="dream-team__title">Команда мечты Womazing</div>
+                  <div class="dream-team__block">
+                     <div class="dream-team__slider swiper">
+                        <div class="dream-team__wrapper swiper-wrapper">
+                           <div class="dream-team__slide swiper-slide">
+                              <img src="@img/main-block/slider__4.jpg" alt="">
+                           </div>
+                           <div class="dream-team__slide swiper-slide">
+                              <img src="@img/main-block/slider__5.jpg" alt="">
+                           </div>
+                           <div class="dream-team__slide swiper-slide">
+                              <img src="@img/main-block/slider__7.jpg" alt="">
+                           </div>
+                        </div>
+                        <div class="dream-team__button">
+                           <button class="swiper-button-next _icon-arrow"></button>
+                           <button class="swiper-button-prev _icon-arrow"></button>
+                        </div>
+                     </div>
+                     <div class="dream-team__text">
+                        <div class="dream-team__text__header">Для каждой</div>
+                        <div class="dream-team__text__middle">
+                           <p>Каждая девушка уникальна. Однако, мы схожи в миллионе мелочей.</p>
+                           <p>Womazing ищет эти мелочи и создает прекрасные вещи, которые выгодно подчеркивают
+                              достоинства каждой девушки.</p>
+                        </div>
+                        <a href="about.html" class="dream-team__text__bottom">Подробнее о бренде</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>
