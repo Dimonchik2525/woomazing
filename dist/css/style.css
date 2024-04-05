@@ -1654,6 +1654,12 @@ footer {
   color: #ffffff;
 }
 
+.dream-team .dream-team__button {
+  -webkit-tap-highlight-color: transparent;
+  /* For iOS Safari */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 .dream-team .dream-team__button .swiper-button-next {
   position: absolute;
   top: 50%;

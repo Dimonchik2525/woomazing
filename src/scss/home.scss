@@ -580,6 +580,10 @@
             transform: rotate(180deg);
          }
       }
+
+      -webkit-tap-highlight-color: transparent;
+      /* For iOS Safari */
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    }
 }
 
